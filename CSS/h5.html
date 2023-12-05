@@ -2,9 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS样式学习</title>
+<!--  表示这个html文件可以被CSS进行样式操作  -->
+    <link rel="stylesheet" href="one/阴影塌陷和浮动.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+
+        .father:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .这是一个建筑1 {
+            float: left;
+        }
+
+        /*
+        相对定位:
+        绝对定位:
+        */
+        div {
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+
+        }
+
+        .first {
+            border: 3px solid red;
+        }
+
+        .father {
+            background-color: yellow;
+            border: 3px dashed red;
+            position: relative;
+            top: -45px;
+        }
+
+        .child {
+            background-color: grey;
+            border: 3px dashed red;
+        }
+
+        .孙子 {
+            background-color: chocolate;
+            border: 3px dashed red;
+        }
+
+
+        .这是一个方块 {
+            width: 300px;
+            height: 300px;
+            border: 3px solid blue;
+            background-color: chocolate;
+        }
+
+        div[class="这是一个方块"] > div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            color: darkorchid;
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+        div[class="这是一个方块"] > div:hover{
+            background-color: cadetblue;
+        }
+
+        .a去 {
+            position: relative;
+            top: -15px;
+            left: -15px;
+        }
+
+        .b去 {
+            position: relative;
+            top: -130px;
+            left: 191px;
+        }
+
+        .c去 {
+            position: relative;
+            top: -141px;
+            left: 87px;
+        }
+
+        .d去 {
+            position: relative;
+            top: -151px;
+            left: -15px;
+        }
+
+        .e去 {
+            position: relative;
+            top: -265px;
+            left: 191px;
+        }
+    </style>
 </head>
 <body>
+
+<div>一个建筑
+    <img src="../resources/建筑1.jpg" alt="建筑" class="这是一个建筑1">
+
+</div>
+
+<div class="first">
+    <div class="father">第一个盒子</div>
+    <div class="child">第一盒子</div>
+    <div class="孙子">第盒子</div>
+</div>
+
+
+<!--练习方块定位-->
+<div class="这是一个方块">
+    <div class="a去">1</div>
+    <div class="b去">2</div>
+    <div class="c去">3</div>
+    <div class="d去">4</div>
+    <div class="e去">5</div>
+
+</div>
 
 </body>
 </html>

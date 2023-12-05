@@ -1,0 +1,28 @@
+/*
+float 浮动起来会脱离标准文档流,要解决父级边框塌陷
+clear 清除浮动 left左侧 right右侧 both两侧
+overflow  hidden隐藏  scroll滚动条    (解决浮动文件超出父级文版框的部分)
+父类后添加一个伪类:可以在不改变原有代码基础上解决问题
+display 反向不可控制
+border 边框  粗细,虚实,颜色
+padding 内边距
+margin  外边距
+*/
+
+
+/*
+相对定位:position:relative 仍然在标准文档流中,原来的位置仍然存在 div框没有塌陷,定位对象是原来的位置
+绝对定位:position:absolute 不在标准文档流中,div框塌陷了,没有父级元素定位时对象是浏览器的边框
+固定定位:position:fixed   右下角小广告-,-不管怎么动,他的位置是固定的
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 直接上下左右都居中
+*/
+
+
+/*
+z-index 层级 0-N   层级越低越下面,层级越高越上面
+opacity 透明度
+
+*/
