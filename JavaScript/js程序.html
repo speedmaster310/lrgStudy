@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今天开始学js</title>
+<!--  script标签内写javaScript代码  -->
+<!--    <script>-->
+<!--        alert("我爱java")-->
+<!--    </script>-->
+
+<!--    js标签必须成对出现   严格区分大小写  -->
+    <script>
+        // 定义变量   变量类型  变量名 = 值
+        var li = 190;
+        var 瑞 = "李瑞戈";
+        alert(瑞);
+        // 条件控制
+        if (0 > 1) {
+            alert("else条件");
+        }else if (li > 90) {
+            alert("elseIf结果")
+        }else {
+            alert("测试else")
+        }
+    // 在浏览器的控制台打印变量  console.log(变量名)   学会在浏览器控制变量
+
+        // 数字(尽量避免使用浮点数运算)  字符串  布尔  逻辑运算  比较运算符 =(定义值) ==(等于类型不同,值相同一样为true,[基本不会使用]) ===(绝对等于,类型一样,值一样,结果才会true)
+        //NaN  not a number   他与任何数值都不相等包括自己  NaN == NaN : false   isNaN(NaN) : true (判断是否是NaN)
+        var a = 1;
+        var b = 1.11111;
+        var c = 1.11111e4;
+        var d = true;
+        var e = false;
+        var f = "1";
+        var g = 1;
+
+        if (a = 5) {
+            alert("单个等于")
+            alert(a)
+        }
+        if (a == f) {
+            alert("双等于")
+        }
+        if (d === true) {
+            alert("三等于")
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
